@@ -54,6 +54,7 @@ body{font: 16px/1.2 var(--ff) }
 .flex{ display: flex;}
 .space-bet{ justify-content: space-between;}
 .align-center{ align-items: center;}
+.gap-r{ row-gap: 4rem;}
 /* custom code */
 
 header{ background: #000; color: #fff;}
@@ -67,6 +68,8 @@ nav a{ padding: 0 15px;}
 label[for="mob-btn"]{ display: none; position: absolute; right: 1rem; top: 20px; }
 
 
+
+
 .banner{ background: #666; color: #fff; padding: 300px 0;}
 .banner button{ background: none; border: none; color: #fff; font-size: 10rem; margin-right: 40px;}
 .banner p{ font-size: 60px; font-weight: 100;}
@@ -75,16 +78,32 @@ label[for="mob-btn"]{ display: none; position: absolute; right: 1rem; top: 20px;
 
 
 
+.wrap-3{ background: var(--red); color: #fff; padding: 50px 0;}
+h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom: 30px;}
+.circle{ border: 2px solid; width: 100px; flex-shrink: 0; aspect-ratio: 1/1; border-radius: 50%; display: grid; place-items: center; font-size: 36px; margin-right: 2rem;}
+.wrap-3 h3{ font-size: 16px; line-height: 30px;}
+.wrap-3 p{ font-size: 14px; font-weight: 100; line-height: 22px; }
 
 
 
+.wrap-4{ background: #fff; color: var(--red); text-align: center; font-size: 36px; line-height: 10rem;}
 
 
+.wrap-5{ background: #ebebeb; color: #363636; padding: 100px 0 140px;}
+.wrap-5 .btn{ margin: 0 10px 60px 0; }
+.btn.active{ background: var(--red); color: #fff; border-color: var(--red); }
+.work{ position: relative; margin-bottom: 2rem; overflow: hidden;}
+.work img{ max-width: 100%; height: auto;}
+.over{ position: absolute; padding: 20px 0; background: #fff; left: 0; right: 0; bottom: -50px; text-align: center; opacity: 0; transition: 400ms; visibility: hidden; }
+.wrap-5 h3{ font-size: 18px; color: var(--red); line-height: 40px;}
+.wrap-5 p{ font-size: 14px; color: #898989; font-weight: 100; line-height: 20px;}
+.work:hover .over{ opacity: 1; visibility: visible; bottom: 0;}
 
 
 
 @media screen and (max-width:1220px){
     html{ font-size: 14px;}
+    h2{ font-size: 62px;}
 }
 
 @media screen and (max-width:980px){
@@ -104,11 +123,12 @@ label[for="mob-btn"]{ display: none; position: absolute; right: 1rem; top: 20px;
 }
 
 @media screen and (max-width:767px){
-    html{ font-size: 13px;}
+    html{ font-size: 12px;}
     .col-m-6{ flex-basis: 50%; max-width: 50%;}
     .collapse{ display: none;}
     label[for="mob-btn"]{ display: inline-block}
     /* header input[type="checkbox"]:checked + .collapse{ display: block; } */
+    .wrap-5 .btn{ margin-right: 4px;}
 }
 
 @media screen and (max-width:460px){
