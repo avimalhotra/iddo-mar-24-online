@@ -28,7 +28,12 @@ ul{ list-style: none; padding: 0;}
 }
 
 
-html{ font-size: 15px; --red:#ca3c3c; --ff:proxima, sans-serif; }
+html{ font-size: 15px;
+     --red:#ca3c3c;
+     --ff: proxima, sans-serif;
+     scroll-behavior: smooth;
+     scroll-padding-top: 80px;
+}
 body{font: 16px/1.2 var(--ff) }
 
 .container{
@@ -57,7 +62,7 @@ body{font: 16px/1.2 var(--ff) }
 .gap-r{ row-gap: 4rem;}
 /* custom code */
 
-header{ background: #000; color: #fff;}
+header{ background: #000; color: #fff; position: sticky; top: 0; z-index: 1;}
 h1{ font-size: 30px; }
 header a{ color: inherit; line-height: 80px; display: inline-block; }
 nav{ margin-left: -20px;}
@@ -98,12 +103,47 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 .wrap-5 h3{ font-size: 18px; color: var(--red); line-height: 40px;}
 .wrap-5 p{ font-size: 14px; color: #898989; font-weight: 100; line-height: 20px;}
 .work:hover .over{ opacity: 1; visibility: visible; bottom: 0;}
+.seemore{ font-size: 36px; color: var(--red); background: none; border: none;}
 
+
+
+
+.wrap-6{ background: #666; color: #fff; padding: 4rem 0 2rem;}
+.reviews{ text-align: center; }
+.review{ display: none; }
+.review.active{ display: block; }
+.review q{ font-size: 36px; line-height: 41px; font-weight: 100;}
+.review figcaption{ font-weight: 700; font-size: 16px;}
+.review img{ margin: 12px 0 10px;}
+.pager{ display: flex; list-style: none; padding: 0; justify-content: center; margin-top: 2rem;}
+.pager li{ margin: 0 5px;}
+.pager a{ display: block; width: 10px; height: 10px; border: 2px solid #fff; border-radius: 50%; }
+.pager a.active{ background: #fff;}
+
+
+
+.wrap-7{ background: #fff; color: #363636; padding: 100px 0 140px;}
+.team{ position: relative; margin-top: 80px; }
+.social{ position: absolute; top: 60px; right: 60px;}
+.social li{ margin-left: 10px;}
+.social a{ font-size: 24px; display: block; background: var(--red); color: #fff; width: 50px; line-height: 50px; border-radius: 50%; text-align: center;}
+.gap{ margin: 50px 0 30px 100px;}
+.wrap-7 h3{ font-size: 18px; color: var(--red); line-height: 40px;}
+.wrap-7 small{ font-size: 14px; font-weight: 100; color: #898989;}
+.wrap-7 p{ font-size: 14px; line-height: 22px; font-weight: 100; color: #363636; margin-top: 2rem;}
+
+
+
+.wrap-8{ background: #666; color: #fff; padding: 85px 0 0 0; text-align: center;}
+.wrap-8 span.fa{ font-size: 72px;}
+.wrap-8 p{ font-size: 72px; font-weight: 100;}
+.wrap-8 b{ font-size: 18px; display: inline-block; margin-bottom: 80px; }
 
 
 @media screen and (max-width:1220px){
     html{ font-size: 14px;}
     h2{ font-size: 62px;}
+    .social{ right: 0;}
 }
 
 @media screen and (max-width:980px){
@@ -120,6 +160,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
     .col-t-11{ flex-basis: 91.66%;  max-width: 91.66%}
     .col-t-12{ flex-basis: 100%;  max-width: 100%} 
     .banner p{ font-size: 35px;}
+    .wrap-8 p{ font-size: 62px;}
 }
 
 @media screen and (max-width:767px){
@@ -129,6 +170,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
     label[for="mob-btn"]{ display: inline-block}
     /* header input[type="checkbox"]:checked + .collapse{ display: block; } */
     .wrap-5 .btn{ margin-right: 4px;}
+    .wrap-8 p{ font-size: 52px;}
 }
 
 @media screen and (max-width:460px){
