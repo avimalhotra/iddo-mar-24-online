@@ -1,10 +1,10 @@
 *,::before,::after{margin: 0; box-sizing: border-box;}
 a{text-decoration: none;}
-label{ display: inline-block;}
+label{ display: block;}
 img{ vertical-align: bottom;}
 button{ cursor: pointer; padding: 0; }
 :disabled, input[type="text"]:read-only{ cursor: not-allowed;}
-input:focus{ outline: 1px dashed;}
+input:focus, textarea:focus{ outline: 1px dashed;}
 iframe{ border: none;}
 ul{ list-style: none; padding: 0;}
 
@@ -128,9 +128,9 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 .social li{ margin-left: 10px;}
 .social a{ font-size: 24px; display: block; background: var(--red); color: #fff; width: 50px; line-height: 50px; border-radius: 50%; text-align: center;}
 .gap{ margin: 50px 0 30px 100px;}
-.wrap-7 h3{ font-size: 18px; color: var(--red); line-height: 40px;}
-.wrap-7 small{ font-size: 14px; font-weight: 100; color: #898989;}
-.wrap-7 p{ font-size: 14px; line-height: 22px; font-weight: 100; color: #363636; margin-top: 2rem;}
+.gap h3{ font-size: 18px; color: var(--red); line-height: 40px;}
+.gap small{ font-size: 14px; font-weight: 100; color: #898989;}
+.gap p{ font-size: 14px; line-height: 22px; font-weight: 100; color: #363636; margin-top: 2rem;}
 
 
 
@@ -139,6 +139,45 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 .wrap-8 p{ font-size: 72px; font-weight: 100;}
 .wrap-8 b{ font-size: 18px; display: inline-block; margin-bottom: 80px; }
 
+
+
+.wrap-9{ background: #fff; color: #363636; padding: 100px 0;}
+canvas{ background: lightblue; margin-top: 50px; max-width: 100%; }
+.accordion{ margin-top: 50px;}
+.accordion li{ margin-bottom: 10px;}
+.accordion a{ display: block; color: #898989; padding: 11px 19px; border: 1px solid #ebebeb; border-radius: 10px;}
+.accordion a span.fa{ margin-right: 16px;}
+.accordion p{ display: none; margin: 20px; color: #363636; font-size: 14px; font-weight: 100; line-height: 22px;}
+.accordion li.active a{ color: var(--red); }
+.accordion li.active p{ display: block; }
+.accordion li a::after{ content: '+'; float: right;}
+.accordion li.active a::after{ content: '-' }
+
+
+.wrap-10{ background: var(--red); padding: 22px 0 23px;}
+.wrap-10 input{ width: 370px; background: none; border: none; color: #fff; height: 35px; font: 100 36px var(--ff);}
+.wrap-10 input::placeholder{ color: #fff;}
+.wrap-10 .btn{ background: #fff;}
+
+
+.wrap-11{ background: #7f7f7f; padding: 23px 0 0 0; }
+.wrap-11 .box{ background: #a6a6a6; color: #fff; line-height: 95px; text-align: center; margin-bottom: 22px; }
+
+
+.wrap-12{ background: #ebebeb; color: #363636; padding: 100px 0;}
+.wrap-12 address{ font-style: normal; color: #898989; font-size: 16px; line-height: 30px; }
+.social2{}
+.social2 li{ margin: 20px 20px 20px 0;}
+.social2 a{ display: block; color: var(--red);}
+.wrap-12 label{ border: 2px solid; color: #363636; padding: 17px; margin: 15px 0; }
+.wrap-12 :is(input,textarea){ background: none; border: none; }
+.wrap-12 textarea{ resize: none; vertical-align: top; height: 42px; }
+.wrap-12 button{ border: none; background: #fff; width: 100%; margin: 15px 0; height: 80px; color: var(--red); border-radius: 10px; font: 400 16px var(--ff); }
+.wrap-12 button span.fa{ font-size: 36px; vertical-align: middle;}
+
+
+.wrap-13{ background: #252525; color: #fff; text-align: center; padding: 50px 0;}
+.wrap-13 button.fa{ background: none; border: none; color: var(--red); }
 
 @media screen and (max-width:1220px){
     html{ font-size: 14px;}
@@ -159,6 +198,8 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
     .col-t-10{ flex-basis: 83.33%;   max-width: 83.33%}
     .col-t-11{ flex-basis: 91.66%;  max-width: 91.66%}
     .col-t-12{ flex-basis: 100%;  max-width: 100%} 
+    .col-t-hide{ display: none;}
+    .col-t-auto{ flex-basis: 20%; max-width: 20%; }
     .banner p{ font-size: 35px;}
     .wrap-8 p{ font-size: 62px;}
 }
@@ -178,5 +219,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
     .col-p-6{ flex-basis: 50%; max-width: 50%;}
     .col-p-12{ flex-basis: 100%; max-width: 100%;}
     .banner .flex{ flex-flow: column wrap; }
+    .wrap-10 input{ width: 240px; font-size: 24px;}
+    .col-t-auto{ flex-basis: 50%; max-width: 100%; }
 }
 
