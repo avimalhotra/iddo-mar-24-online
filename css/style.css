@@ -33,8 +33,10 @@ html{ font-size: 15px;
      --ff: proxima, sans-serif;
      scroll-behavior: smooth;
      scroll-padding-top: 80px;
+     overflow-x: hidden;
 }
-body{font: 16px/1.2 var(--ff) }
+body{font: 16px/1.2 var(--ff); }
+
 
 .container{
     max-width: 1200px;
@@ -72,9 +74,7 @@ nav li{ margin: 0 5px;}
 nav a{ padding: 0 15px;}
 .btn{ width: 90px; height: 35px; border: 2px solid; color: var(--red); background: none; border-radius: 10px; font: 16px var(--ff);}
 .btn span{ display: block; height: 2px; background: var(--red); margin: 6px 10px; transition: .4s; transform-origin: right center; }
-label[for="mob-btn"]{ display: none; position: absolute; right: 1rem; top: 20px; }
-
-
+.menu{ display: none; position: absolute; right: 1rem; top: 20px; }
 
 
 
@@ -99,7 +99,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 
 .wrap-5{ background: #ebebeb; color: #363636; padding: 100px 0 140px;}
 .wrap-5 .btn{ margin: 0 10px 60px 0; }
-.btn.active{ background: var(--red); color: #fff; border-color: var(--red); }
+.wrap-5 .btn.active{ background: var(--red); color: #fff; border-color: var(--red); }
 .work{ position: relative; margin-bottom: 2rem; overflow: hidden;}
 .work img{ max-width: 100%; height: auto;}
 .over{ position: absolute; padding: 20px 0; background: #fff; left: 0; right: 0; bottom: -50px; text-align: center; opacity: 0; transition: 400ms; visibility: hidden; }
@@ -113,8 +113,8 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 
 .wrap-6{ background: #666; color: #fff; padding: 4rem 0 2rem;}
 .reviews{ text-align: center; }
-.review{ display: none; }
-.review.active{ display: block; }
+/* .review{ display: none; }
+.review.active{ display: block; } */
 .review q{ font-size: 36px; line-height: 41px; font-weight: 100;}
 .review figcaption{ font-weight: 700; font-size: 16px;}
 .review img{ margin: 12px 0 10px;}
@@ -122,6 +122,10 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 .pager li{ margin: 0 5px;}
 .pager a{ display: block; width: 10px; height: 10px; border: 2px solid #fff; border-radius: 50%; }
 .pager a.active{ background: #fff;}
+.wrap-6 .bx-wrapper{ background: none; border: none; box-shadow: 0 0;}
+.wrap-6 .bx-wrapper img{ display: inline;}
+.wrap-6 .bx-wrapper .bx-pager.bx-default-pager a{ border: 2px solid #fff;}
+.wrap-6 .bx-wrapper .bx-pager.bx-default-pager a.active, .wrap-6 .bx-wrapper .bx-pager.bx-default-pager a:focus, .wrap-6 .bx-wrapper .bx-pager.bx-default-pager a:hover{ background: #fff;}
 
 
 
@@ -218,12 +222,12 @@ canvas{ background: lightblue; margin-top: 50px; max-width: 100%; }
 @media screen and (max-width:767px){
     html{ font-size: 12px;}
     .col-m-6{ flex-basis: 50%; max-width: 50%;}
-    .collapse{ position: absolute; background: #000; left: 0; right: 0; top: 60px; padding-bottom: 10px; transition: .4s; opacity: 0; visibility: hidden;}
-    label[for="mob-btn"]{ display: inline-block}
-    header input[type="checkbox"]:checked ~ label span:nth-child(1){ transform: rotate(-14deg); }
-    header input[type="checkbox"]:checked ~ label span:nth-child(2){ opacity: 0; }
-    header input[type="checkbox"]:checked ~ label span:nth-child(3){ transform: rotate(14deg);}
-    header input[type="checkbox"]:checked ~ .collapse{ opacity: 1; visibility: visible; top: 80px; }
+    .collapse{ position: absolute; background: #000; left: 0; right: 0; top: 60px; padding-bottom: 10px; display: none;}
+    .menu{ display: inline-block}
+    .menu.active span:nth-child(1){ transform: rotate(-14deg); }
+    .menu.active span:nth-child(2){ opacity: 0; }
+    .menu.active span:nth-child(3){ transform: rotate(14deg);}
+    
     .wrap-5 .btn{ margin-right: 4px;}
     .wrap-8 p{ font-size: 52px;}
     .collapse .flex{ flex-flow: column wrap;}
