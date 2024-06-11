@@ -84,7 +84,7 @@ $(function(){
         autoHover:true
     });
 
-    $(".countries").chosen();
+   
 
     $(window).scroll(function(){
         /* if($(this).scrollTop()>=200){
