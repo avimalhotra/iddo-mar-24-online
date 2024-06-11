@@ -68,20 +68,20 @@ body{font: 16px/1.2 var(--ff); }
 
 header{ background: #000; color: #fff; position: sticky; top: 0; z-index: 1;}
 h1{ font-size: 30px; }
-header a{ color: inherit; line-height: 80px; display: inline-block; }
+header a{ color: inherit; line-height: 80px; display: inline-block;}
 nav{ margin-left: -20px;}
 nav li{ margin: 0 5px;}
 nav a{ padding: 0 15px;}
 .btn{ width: 90px; height: 35px; border: 2px solid; color: var(--red); background: none; border-radius: 10px; font: 16px var(--ff);}
 .btn span{ display: block; height: 2px; background: var(--red); margin: 6px 10px; transition: .4s; transform-origin: right center; }
 .menu{ display: none; position: absolute; right: 1rem; top: 20px; }
-
+.signup{ color: #e64444;}
 
 
 .banner{ background: #666; color: #fff; padding: 300px 0;}
 .banner button{ background: none; border: none; color: #fff; font-size: 10rem; margin-right: 40px;}
 .banner p{ font-size: 60px; font-weight: 100;}
-.banner a{ color: var(--red);}
+.banner a{ color: #fff;}
 
 
 
@@ -98,7 +98,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 
 
 .wrap-5{ background: #ebebeb; color: #363636; padding: 100px 0 140px;}
-.wrap-5 .btn{ margin: 0 10px 60px 0; }
+.wrap-5 .btn{ margin: 0 10px 60px 0; color: #992b2b; }
 .wrap-5 .btn.active{ background: var(--red); color: #fff; border-color: var(--red); }
 .work{ position: relative; margin-bottom: 2rem; overflow: hidden;}
 .work img{ max-width: 100%; height: auto;}
@@ -136,7 +136,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 .social a{ font-size: 24px; display: block; background: var(--red); color: #fff; width: 50px; line-height: 50px; border-radius: 50%; text-align: center;}
 .gap{ margin: 50px 0 30px 100px;}
 .gap h3{ font-size: 18px; color: var(--red); line-height: 40px;}
-.gap small{ font-size: 14px; font-weight: 100; color: #898989;}
+.gap small{ font-size: 14px; font-weight: 100; color: #666;}
 .gap p{ font-size: 14px; line-height: 22px; font-weight: 100; color: #363636; margin-top: 2rem;}
 
 
@@ -152,7 +152,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 canvas{ background: lightblue; margin-top: 50px; max-width: 100%; }
 .accordion{ margin-top: 50px;}
 .accordion li{ margin-bottom: 10px;}
-.accordion a{ display: block; color: #898989; padding: 11px 19px; border: 1px solid #ebebeb; border-radius: 10px;}
+.accordion a{ display: block; color: #777; padding: 11px 19px; border: 1px solid #ebebeb; border-radius: 10px;}
 .accordion a span.fa{ margin-right: 16px;}
 .accordion p{ display: none; margin: 20px; color: #363636; font-size: 14px; font-weight: 100; line-height: 22px;}
 .accordion li a.active{ color: var(--red); }
@@ -168,12 +168,11 @@ canvas{ background: lightblue; margin-top: 50px; max-width: 100%; }
 
 
 .wrap-11{ background: #7f7f7f; padding: 23px 0 0 0; }
-.wrap-11 .box{ background: #a6a6a6; color: #fff; line-height: 95px; text-align: center; margin-bottom: 22px; }
+.wrap-11 .box{ background: #666; color: #fff; line-height: 95px; text-align: center; margin-bottom: 22px; }
 
 
 .wrap-12{ background: #ebebeb; color: #363636; padding: 100px 0;}
-.wrap-12 address{ font-style: normal; color: #898989; font-size: 16px; line-height: 30px; }
-.social2{}
+.wrap-12 address{ font-style: normal; color: #666; font-size: 16px; line-height: 30px; }
 .social2 li{ margin: 20px 20px 20px 0;}
 .social2 a{ display: block; color: var(--red);}
 .wrap-12 label{ border: 2px solid; color: #363636; padding: 17px; margin: 15px 0; }
