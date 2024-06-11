@@ -152,7 +152,7 @@ h2{ font-size: 72px; line-height: 60px; border-bottom: 10px solid; margin-bottom
 canvas{ background: lightblue; margin-top: 50px; max-width: 100%; }
 .accordion{ margin-top: 50px;}
 .accordion li{ margin-bottom: 10px;}
-.accordion a{ display: block; color: #777; padding: 11px 19px; border: 1px solid #ebebeb; border-radius: 10px;}
+.accordion a{ display: block; color: #666; padding: 11px 19px; border: 1px solid #ebebeb; border-radius: 10px;}
 .accordion a span.fa{ margin-right: 16px;}
 .accordion p{ display: none; margin: 20px; color: #363636; font-size: 14px; font-weight: 100; line-height: 22px;}
 .accordion li a.active{ color: var(--red); }
